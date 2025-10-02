@@ -1,49 +1,36 @@
 :root {
-  --gold: #9E7758;
-  --gold-dark: #705748;
-  --ink: #1B1B1E;
+  --accent: #C78BA3;
+  --hover: #A2408B;
+  --black: #1B1B1E;
   --paper: #ffffff;
   --max: 1100px;
 }
 
-@font-face {
-  font-family: "Grandon Grotesque";
-  src:
-    url("fonts/GrandonGrotesque-Bold.woff2") format("woff2"),
-    url("fonts/GrandonGrotesque-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
-  font-family: Inter, sans-serif;
+  font-family: 'Lato', sans-serif;
   background: var(--paper) url("paper.jpg") center/cover fixed no-repeat;
-  color: var(--ink);
+  color: var(--black);
   line-height: 1.6;
 }
 
 h1, h2, h3 {
-  font-family: "Grandon Grotesque", Inter, sans-serif;
-  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
 }
 
 * { box-sizing: border-box }
 html, body { margin: 0; padding: 0 }
 img { max-width: 100%; display: block }
 
-/* Layout */
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px }
 .center { text-align: center }
 .narrow { max-width: 720px }
 
-/* Top Bar */
 .topbar {
   text-align: center;
   font-size: .9rem;
   background: rgba(255, 255, 255, .7);
   backdrop-filter: saturate(140%) blur(6px);
-  border-bottom: 1px solid rgba(0, 0, 0, .06);
   padding: 8px 12px;
 }
 
@@ -52,9 +39,8 @@ img { max-width: 100%; display: block }
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(255, 255, 255, .72);
-  backdrop-filter: saturate(140%) blur(8px);
-  border-bottom: 1px solid rgba(0, 0, 0, .06);
+  background: rgba(255, 255, 255, .9);
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
 .site-header .wrap {
   display: flex;
@@ -69,12 +55,12 @@ img { max-width: 100%; display: block }
   gap: 18px;
 }
 .nav a {
-  color: var(--ink);
+  color: var(--black);
   font-weight: 600;
   text-decoration: none;
 }
 .nav a:hover {
-  color: var(--gold-dark);
+  color: var(--hover);
 }
 
 /* Buttons */
@@ -82,23 +68,25 @@ img { max-width: 100%; display: block }
   padding: 10px 18px;
   border-radius: 999px;
   font-weight: 700;
-  text-decoration: none;
   text-align: center;
-  border: 1.6px solid var(--gold);
-  color: var(--gold);
+  border: 1.6px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
   transition: all .2s ease;
+  text-decoration: none;
 }
 .btn:hover {
-  color: var(--gold-dark);
-  border-color: var(--gold-dark);
+  color: #fff;
+  background: var(--hover);
+  border-color: var(--hover);
 }
-.btn-gold {
-  background: var(--gold);
+.btn-primary {
+  background: var(--accent);
   color: #fff;
 }
-.btn-gold:hover {
-  background: var(--gold-dark);
-  border-color: var(--gold-dark);
+.btn-primary:hover {
+  background: var(--hover);
+  border-color: var(--hover);
 }
 .btn-outline {
   background: transparent;
@@ -138,11 +126,9 @@ img { max-width: 100%; display: block }
 }
 .section.alt {
   background: rgba(255, 255, 255, .55);
-  border-top: 1px solid rgba(0, 0, 0, .05);
-  border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
 .section-title {
-  border-left: 4px solid var(--gold);
+  border-left: 4px solid var(--accent);
   padding-left: 10px;
   margin-bottom: 16px;
 }
@@ -158,21 +144,16 @@ img { max-width: 100%; display: block }
   border: 1px solid rgba(0, 0, 0, .06);
   border-radius: 14px;
   padding: 18px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, .06);
 }
 .card-img {
   height: 140px;
   margin: 0 auto 8px;
-  opacity: .9;
 }
 .card h3 {
   margin: .2rem 0 .35rem;
 }
-.card p {
-  margin: 0;
-}
 
-/* About split */
+/* About */
 .about-grid {
   display: grid;
   gap: 24px;
@@ -181,9 +162,6 @@ img { max-width: 100%; display: block }
 .about-visual img {
   width: 220px;
   margin: 0 auto;
-}
-.about-copy .lead {
-  margin-bottom: 12px;
 }
 
 /* Forms */
@@ -216,8 +194,8 @@ img { max-width: 100%; display: block }
 .site-footer {
   text-align: center;
   padding: 36px 20px;
-  background: rgba(255, 255, 255, .72);
-  border-top: 1px solid rgba(0, 0, 0, .06);
+  background: rgba(255, 255, 255, .9);
+  border-top: 1px solid rgba(0, 0, 0, .05);
 }
 .footer-logo {
   height: 56px;
