@@ -1,82 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Empiraya — Make Yours</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Empiraya is a nonprofit empowering Ghanaian youth through creativity, mentorship, and community." />
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <img src="Empiraya copy.png" alt="Empiraya Header" class="header-image">
-    <h1>Make Yours.</h1>
-    <p class="tagline">Empowering Ghanaian youth through creativity, collaboration, and purpose.</p>
-    <a href="#about" class="scroll-btn">Learn More ↓</a>
+  <!-- Top bar -->
+  <div class="topbar">
+    <span>Empowering youth in Ghana — Make Yours.</span>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="wrap">
+      <a href="#" class="brand">
+        <img src="new logo.png" alt="Empiraya logo">
+      </a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Work</a>
+        <a href="#work">Partner</a>
+        <a href="#contact" class="btn btn-gold">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Empiraya</h2>
-    <p>Empiraya is a Ghana-based nonprofit that empowers underprivileged youth through creative projects, mentorship, and community events. We believe in the power of resilience, self-expression, and purpose. At Empiraya, every young dreamer has the right to say: "This is mine. I made it. I made it mine."</p>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Our Work</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>Art & Expression Workshops</h3>
-        <p>Creativity meets empowerment through paint, music, and movement.</p>
-      </div>
-      <div class="card">
-        <h3>Community Clean-Ups</h3>
-        <p>We reclaim our spaces and plant pride back into our communities.</p>
-      </div>
-      <div class="card">
-        <h3>Skills for Life</h3>
-        <p>From digital literacy to job search bootcamps, we prepare youth for the world ahead.</p>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <img src="Empiraya copy.png" alt="Empiraya header wordmark" class="hero-mark">
+      <h1 class="title">Make Yours</h1>
+      <p class="lead">Empiraya equips under‑resourced youth with skills, mentorship, and creative platforms to shape their futures.</p>
+      <div class="cta">
+        <a href="#work" class="btn btn-gold">Work With Us</a>
+        <a href="#projects" class="btn btn-outline">See Our Work</a>
       </div>
     </div>
   </section>
 
-  <!-- Work With Us -->
-  <section id="work">
-    <h2>Work With Us</h2>
-    <p>We’re always looking for partners, volunteers, mentors, and collaborators. Whether you’re an individual or organization, reach out — we’d love to connect.</p>
-    <a href="#contact" class="button">Join the Movement</a>
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Our Work</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="new logo.png" alt="" class="card-img">
+          <h3>Art & Expression</h3>
+          <p>Workshops that turn creativity into confidence — paint, music, writing, performance.</p>
+        </article>
+        <article class="card">
+          <img src="new logo.png" alt="" class="card-img">
+          <h3>Community Clean‑ups</h3>
+          <p>Hands-on projects that build pride, teamwork, and visible change in our neighborhoods.</p>
+        </article>
+        <article class="card">
+          <img src="new logo.png" alt="" class="card-img">
+          <h3>Skills for Life</h3>
+          <p>Digital literacy, job search bootcamps, and mentorship linking youth to opportunity.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section alt">
+    <div class="wrap about-grid">
+      <div class="about-visual">
+        <img src="new logo.png" alt="Empiraya emblem">
+      </div>
+      <div class="about-copy">
+        <h2 class="section-title">About Empiraya</h2>
+        <p class="lead">Empiraya is a Ghana-based nonprofit creating access, belonging, and real opportunities for young people through programs that blend creativity, community, and practical skills.</p>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner / Work With Us -->
+  <section id="work" class="section">
+    <div class="wrap center">
+      <h2 class="section-title">Work With Us</h2>
+      <p class="lead">Sponsor a program, volunteer your skills, or collaborate on impact projects.</p>
+      <a href="#contact" class="btn btn-gold">Partner with Empiraya</a>
+    </div>
   </section>
 
   <!-- Newsletter -->
-  <section id="newsletter">
-    <h2>Subscribe to Updates</h2>
-    <form>
-      <input type="email" placeholder="Your email address" required>
-      <button type="submit">Subscribe</button>
-    </form>
+  <section id="newsletter" class="section alt">
+    <div class="wrap narrow center">
+      <h2 class="section-title">Stay in the Loop</h2>
+      <form class="form-row" action="#" method="post">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit" class="btn btn-gold">Subscribe</button>
+      </form>
+      <p class="tiny">Occasional updates only. Unsubscribe anytime.</p>
+    </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <ul class="contact-list">
-      <li>Email: <a href="mailto:empirayalgb@gmail.com">empirayalgb@gmail.com</a></li>
-      <li>Instagram: <a href="https://www.instagram.com/empiraya" target="_blank">@empiraya</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/company/empiraya/" target="_blank">Empiraya</a></li>
-    </ul>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Contact</h2>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:empirayalgb@gmail.com">empirayalgb@gmail.com</a></li>
+        <li><strong>Instagram:</strong> <a target="_blank" href="https://www.instagram.com/empiraya">@empiraya</a></li>
+        <li><strong>LinkedIn:</strong> <a target="_blank" href="https://www.linkedin.com/company/empiraya/">Empiraya</a></li>
+      </ul>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <img src="new logo.png" alt="Empiraya Logo" class="footer-logo">
-    <small>© <span id="year"></span> Empiraya LBG | Built with love for Ghana.</small>
+  <footer class="site-footer">
+    <img src="new logo.png" alt="Empiraya logo" class="footer-logo">
+    <small>© <span id="year"></span> Empiraya LBG — Make Yours.</small>
   </footer>
 
-  <script>
-    // Sets the year automatically
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
