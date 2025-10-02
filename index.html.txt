@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Empiraya — Make Yours</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <img src="Empiraya copy.png" alt="Empiraya Header" class="header-image">
+    <h1>Make Yours.</h1>
+    <p class="tagline">Empowering Ghanaian youth through creativity, collaboration, and purpose.</p>
+    <a href="#about" class="scroll-btn">Learn More ↓</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Empiraya</h2>
+    <p>Empiraya is a Ghana-based nonprofit that empowers underprivileged youth through creative projects, mentorship, and community events. We believe in the power of resilience, self-expression, and purpose. At Empiraya, every young dreamer has the right to say: "This is mine. I made it. I made it mine."</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Our Work</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Art & Expression Workshops</h3>
+        <p>Creativity meets empowerment through paint, music, and movement.</p>
+      </div>
+      <div class="card">
+        <h3>Community Clean-Ups</h3>
+        <p>We reclaim our spaces and plant pride back into our communities.</p>
+      </div>
+      <div class="card">
+        <h3>Skills for Life</h3>
+        <p>From digital literacy to job search bootcamps, we prepare youth for the world ahead.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work With Us -->
+  <section id="work">
+    <h2>Work With Us</h2>
+    <p>We’re always looking for partners, volunteers, mentors, and collaborators. Whether you’re an individual or organization, reach out — we’d love to connect.</p>
+    <a href="#contact" class="button">Join the Movement</a>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter">
+    <h2>Subscribe to Updates</h2>
+    <form>
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <ul class="contact-list">
+      <li>Email: <a href="mailto:empirayalgb@gmail.com">empirayalgb@gmail.com</a></li>
+      <li>Instagram: <a href="https://www.instagram.com/empiraya" target="_blank">@empiraya</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/company/empiraya/" target="_blank">Empiraya</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="new logo.png" alt="Empiraya Logo" class="footer-logo">
+    <small>© <span id="year"></span> Empiraya LBG | Built with love for Ghana.</small>
+  </footer>
+
+  <script>
+    // Sets the year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
